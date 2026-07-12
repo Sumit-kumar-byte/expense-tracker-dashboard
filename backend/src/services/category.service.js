@@ -44,7 +44,7 @@ export async function suggestCategory(userId, merchantName) {
   for (const category of categories) {
     for (const kw of category.keywords) {
       if (normalized.includes(kw.keyword.toLowerCase())) {
-        const score = kw.weight * kw.keyword.length; // longer/more-weighted match wins
+        const score = kw.weight * kw.keyword.length;
         if (score > bestScore) {
           bestScore = score;
           bestMatch = category;

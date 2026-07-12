@@ -6,7 +6,6 @@ export default function InsightsPanel({ recurring = [], forecast, budgetAlerts =
       <h3 className="font-semibold text-slate-800 mb-4">Smart Insights</h3>
 
       <div className="space-y-5">
-        {/* Forecast */}
         {forecast && (
           <div className="flex items-start gap-3">
             <TrendingUp className="w-5 h-5 text-indigo-500 mt-0.5 shrink-0" />
@@ -19,7 +18,6 @@ export default function InsightsPanel({ recurring = [], forecast, budgetAlerts =
           </div>
         )}
 
-        {/* Budget alerts */}
         {budgetAlerts.length > 0 && (
           <div className="flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 shrink-0" />
@@ -34,7 +32,6 @@ export default function InsightsPanel({ recurring = [], forecast, budgetAlerts =
           </div>
         )}
 
-        {/* Recurring */}
         {recurring.length > 0 && (
           <div className="flex items-start gap-3">
             <Repeat className="w-5 h-5 text-slate-400 mt-0.5 shrink-0" />

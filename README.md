@@ -1,11 +1,11 @@
 # Expense Tracker Dashboard
 
-A full-stack expense tracking dashboard with authentication, transaction management, dashboard summaries, and smart insights.
+A full-stack expense tracking dashboard for managing personal finances with authentication, transaction tracking, dashboard summaries, and smart insights.
 
 ## Features
 - User registration and login with JWT-based authentication
-- Transaction CRUD with category assignment and date filters
-- Dashboard summary cards, category breakdowns, and monthly trend charts
+- Transaction management with category assignment and date filters
+- Dashboard summaries, category breakdowns, and monthly trend charts
 - Smart insights for recurring expenses, budget alerts, and next-month forecasts
 - Prisma + PostgreSQL backend and Vite + React frontend
 
@@ -14,8 +14,8 @@ A full-stack expense tracking dashboard with authentication, transaction managem
 - Backend: Node.js, Express, Prisma, PostgreSQL, Zod, JWT
 
 ## Project Structure
-- backend/: Express API, Prisma schema, routes, controllers, services
-- frontend/: React app with charts and dashboard UI
+- backend/: Express API, Prisma schema, routes, controllers, and services
+- frontend/: React dashboard UI with charts and data views
 
 ## Setup
 1. Install dependencies in both folders.
@@ -37,5 +37,5 @@ npm run dev
 ```
 
 ## Author
-Made by: Sumit Kumar
+Created by: Sumit Kumar
 Intern ID: CITS101

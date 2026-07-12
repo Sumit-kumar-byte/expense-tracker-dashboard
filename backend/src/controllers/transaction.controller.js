@@ -9,7 +9,7 @@ const transactionSchema = z.object({
   type: z.enum(['EXPENSE', 'INCOME']).default('EXPENSE'),
   categoryId: z.string().uuid().optional().nullable(),
   note: z.string().optional(),
-  date: z.string().datetime().or(z.string()), // accept ISO string or plain date
+  date: z.string().datetime().or(z.string()),
 });
 
 export async function listTransactions(req, res) {
